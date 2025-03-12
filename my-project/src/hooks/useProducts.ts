@@ -19,37 +19,37 @@ const useProducts = () => {
           id: 1,
           name: "Lipstick",
           price: 1250,
-          image: "https://via.placeholder.com/150?text=Lipstick",
+          image: "/src/assets/p1.jpg",
         },
         {
           id: 2,
           name: "Foundation",
           price: 400,
-          image: "https://via.placeholder.com/150?text=Foundation",
+          image: "/src/assets/p2.jpg",
         },
         {
           id: 3,
           name: "Mascara",
           price: 380,
-          image: "https://via.placeholder.com/150?text=Mascara",
+          image: "/src/assets/p3.jpg",
         },
         {
           id: 4,
           name: "Eyeshadow Palette",
           price: 220,
-          image: "https://via.placeholder.com/150?text=Eyeshadow+Palette",
+          image: "/src/assets/p4.jpg",
         },
         {
           id: 5,
           name: "Blush",
           price: 670,
-          image: "https://via.placeholder.com/150?text=Blush",
+          image: "/src/assets/p5.jpg",
         },
         {
           id: 6,
           name: "Nail Polish",
           price: 700,
-          image: "https://via.placeholder.com/150?text=Nail+Polish",
+          image: "/src/assets/p6.jpg",
         },
       ]);
       setLoading(false); // Set loading to false after fetching data

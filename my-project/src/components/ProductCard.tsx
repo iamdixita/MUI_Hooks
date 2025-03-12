@@ -38,19 +38,21 @@ const ProductCard: React.FC<ProductCardProps> = ({
         animation: "fadeIn 1s ease-out",
       }}>
       {/* CardMedia displays the product image */}
-      <CardMedia component="img" height="140" image={image} alt={name} />
+      <CardMedia component="img" height="160" image={image} alt={name} />
 
       {/* This wraps the text content of the card (product name & price). */}
-      <CardContent>
+      <CardContent sx={{ p: 0 }}>
         {/* Product name displayed in h6 typography */}
-        <Typography variant="h6">{name}</Typography>
+        <Typography variant="h6" sx={{ mt: 2 }}>
+          {name}
+        </Typography>
 
         {/* Product price with secondary text color */}
         <Typography color="text.secondary">${price}</Typography>
       </CardContent>
 
       {/* Holds interactive elements (buttons, links, actions). */}
-      <CardActions>
+      <CardActions sx={{ ml: 12, width: 85 }}>
         {/* Button to navigate to the product details page using the product ID */}
         <Button size="small" onClick={() => navigate(`/products/${id}`)}>
           View Details

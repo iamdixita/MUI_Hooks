@@ -1,6 +1,7 @@
 import { ThemeProvider, createTheme } from "@mui/material/styles";
 import { Typography, Button, Box } from "@mui/material";
 import { motion } from "framer-motion";
+import { useNavigate } from "react-router-dom"; // Import useNavigate
 
 const theme = createTheme({
   palette: {
@@ -17,6 +18,11 @@ const theme = createTheme({
 const MotionBox = motion(Box);
 
 export default function WelcomePage() {
+  const navigate = useNavigate(); // Hook for navigation
+
+  const handleGetStarted = () => {
+    navigate("/products"); // Navigate to property list page
+  };
   return (
     <ThemeProvider theme={theme}>
       <MotionBox
@@ -45,6 +51,7 @@ export default function WelcomePage() {
         <Button
           variant="contained"
           color="primary"
+          onClick={handleGetStarted}
           sx={{
             borderRadius: "17px",
             px: 4,

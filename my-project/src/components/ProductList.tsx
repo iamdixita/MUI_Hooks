@@ -17,7 +17,7 @@ const ProductList: React.FC = () => {
       <Typography
         align="center"
         gutterBottom
-        sx={{ mt: 2.3, mb: 2.4, fontSize: "1.1rem", color: "#990F4B" }}>
+        sx={{ mt: 3, mb: 1, fontSize: "1.1rem", color: "#990F4B" }}>
         "Your Beauty, Your Way: Explore Our Top Selections"
       </Typography>
 
@@ -27,7 +27,8 @@ const ProductList: React.FC = () => {
           display="flex"
           justifyContent="center"
           alignItems="center"
-          minHeight="50vh">
+          minHeight="100vh"
+          overflow="auto">
           <CircularProgress color="secondary" />
         </Box>
       ) : (

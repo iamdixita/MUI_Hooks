@@ -37,7 +37,11 @@ const ProductDetailPage: React.FC = () => {
 
   return (
     <Box>
-      <Typography variant="h4">{product.name}</Typography>
+      <Typography
+        variant="h5"
+        sx={{ mb: 2, mt: 10, color: "#990F4B", fontFamily: "cursive" }}>
+        {product.name}
+      </Typography>
       <img src={product.image} alt={product.name} />
       <Typography variant="h6">Price: ${product.price}</Typography>
     </Box>
