@@ -1,5 +1,3 @@
-// A reusable MUI Card component to display product details.
-
 import React from "react";
 import {
   Card,
@@ -13,13 +11,12 @@ import { useNavigate } from "react-router-dom";
 
 // Define TypeScript interface for product properties.
 interface ProductCardProps {
-  id: number; // Unique identifier for the product
-  name: string; // Product name
-  price: number; // Product price
-  image: string; // URL for the product image
+  id: number;
+  name: string;
+  price: number;
+  image: string;
 }
 
-// Functional component for displaying a product card.
 const ProductCard: React.FC<ProductCardProps> = ({
   id,
   name,
@@ -29,8 +26,17 @@ const ProductCard: React.FC<ProductCardProps> = ({
   const navigate = useNavigate(); // React Router hook for navigation
 
   return (
-    // The Card component is a container that holds product details.
-    <Card sx={{ maxWidth: 300, m: 2 }}>
+    <Card
+      sx={{
+        maxWidth: 300,
+        m: 2,
+        transition: "transform 0.3s ease, box-shadow 0.3s ease",
+        "&:hover": {
+          transform: "scale(1.05)",
+          boxShadow: "0 4px 8px rgba(0, 0, 0, 0.2)",
+        },
+        animation: "fadeIn 1s ease-out",
+      }}>
       {/* CardMedia displays the product image */}
       <CardMedia component="img" height="140" image={image} alt={name} />
 
@@ -54,4 +60,4 @@ const ProductCard: React.FC<ProductCardProps> = ({
   );
 };
 
-export default ProductCard; // Export the component for reuse
+export default ProductCard;

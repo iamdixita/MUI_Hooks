@@ -9,13 +9,18 @@ const About: React.FC = () => {
         textAlign: "center",
         minHeight: "50vh",
         bgcolor: "#f7f7f7",
-        mt: 4,
+        mt: 7,
       }}>
       {/* Page Title */}
       <Typography
-        variant="h3"
-        sx={{ fontWeight: "bold", mb: 3, color: "#990F4B" }}>
-        About Us
+        variant="h4"
+        sx={{
+          fontWeight: "bold",
+          mb: 3,
+          color: "#990F4B",
+          fontFamily: "serif",
+        }}>
+        "From Skincare to Glam: The Ultimate Beauty Haven"
       </Typography>
 
       {/* Animated Info Cards */}

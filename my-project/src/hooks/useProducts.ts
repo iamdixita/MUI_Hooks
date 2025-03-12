@@ -17,21 +17,39 @@ const useProducts = () => {
       setProducts([
         {
           id: 1,
-          name: "Laptop",
-          price: 999,
-          image: "https://via.placeholder.com/150",
+          name: "Lipstick",
+          price: 1250,
+          image: "https://via.placeholder.com/150?text=Lipstick",
         },
         {
           id: 2,
-          name: "Phone",
-          price: 499,
-          image: "https://via.placeholder.com/150",
+          name: "Foundation",
+          price: 400,
+          image: "https://via.placeholder.com/150?text=Foundation",
         },
         {
           id: 3,
-          name: "Headphones",
-          price: 199,
-          image: "https://via.placeholder.com/150",
+          name: "Mascara",
+          price: 380,
+          image: "https://via.placeholder.com/150?text=Mascara",
+        },
+        {
+          id: 4,
+          name: "Eyeshadow Palette",
+          price: 220,
+          image: "https://via.placeholder.com/150?text=Eyeshadow+Palette",
+        },
+        {
+          id: 5,
+          name: "Blush",
+          price: 670,
+          image: "https://via.placeholder.com/150?text=Blush",
+        },
+        {
+          id: 6,
+          name: "Nail Polish",
+          price: 700,
+          image: "https://via.placeholder.com/150?text=Nail+Polish",
         },
       ]);
       setLoading(false); // Set loading to false after fetching data

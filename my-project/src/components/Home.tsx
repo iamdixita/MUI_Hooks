@@ -39,13 +39,20 @@ export default function WelcomePage() {
         <Typography variant="h1" sx={{ mt: "-5rem" }}>
           Welcome to PureBliss!
         </Typography>
-        <Typography variant="body1" sx={{ mb: 3 }}>
-          Find your dream property with a touch of elegance and ease.
+        <Typography variant="body1" sx={{ mb: 3, color: "#990F4B", mt: 2 }}>
+          "Enhance Your Glow: Must-Have Beauty Picks"
         </Typography>
         <Button
           variant="contained"
           color="primary"
-          sx={{ borderRadius: "20px", px: 4 }}>
+          sx={{
+            borderRadius: "17px",
+            px: 4,
+            m: 2,
+            height: "3rem",
+            color: "#990F4B",
+            fontWeight: "bold",
+          }}>
           Get Started
         </Button>
       </MotionBox>

@@ -1,5 +1,3 @@
-// This component fetches products using useProducts and displays them using ProductCard.
-
 import React from "react";
 import {
   Grid,
@@ -11,16 +9,16 @@ import {
 import ProductCard from "../components/ProductCard"; // Import the reusable ProductCard component
 import useProducts from "../hooks/useProducts"; // Import custom hook to fetch products
 
-// Define ProductList component
 const ProductList: React.FC = () => {
-  // Call the custom hook to get the list of products and loading state
-  const { products, loading } = useProducts(); // Assume useProducts returns { products, loading }
+  const { products, loading } = useProducts(); // Get the list of products and loading state
 
   return (
     <Container>
-      {/* Typography for the title, styled as an h4 header and centered */}
-      <Typography variant="h4" align="center" gutterBottom>
-        Products
+      <Typography
+        align="center"
+        gutterBottom
+        sx={{ mt: 2.3, mb: 2.4, fontSize: "1.1rem", color: "#990F4B" }}>
+        "Your Beauty, Your Way: Explore Our Top Selections"
       </Typography>
 
       {/* Show loading indicator if data is still being fetched */}
@@ -35,7 +33,7 @@ const ProductList: React.FC = () => {
       ) : (
         <Grid container spacing={3} justifyContent="center">
           {products.map((product) => (
-            <Grid item key={product.id}>
+            <Grid item xs={12} sm={6} md={4} key={product.id}>
               <ProductCard {...product} />
             </Grid>
           ))}
@@ -45,5 +43,4 @@ const ProductList: React.FC = () => {
   );
 };
 
-// Export ProductList component for use in other parts of the app
 export default ProductList;
